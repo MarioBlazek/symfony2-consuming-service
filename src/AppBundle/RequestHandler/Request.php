@@ -10,6 +10,8 @@ class Request
 
     private $headers;
 
+    private $body;
+
     public function __construct($verb, $uri)
     {
         $this->verb = $verb;
@@ -34,5 +36,15 @@ class Request
     public function getHeaders()
     {
         return $this->headers;
+    }
+
+    public function setBody($body)
+    {
+        $this->body = $body;
+    }
+
+    public function getBody()
+    {
+        return $this->body;
     }
 }
