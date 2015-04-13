@@ -8,6 +8,8 @@ class Request
 
     private $uri;
 
+    private $headers;
+
     public function __construct($verb, $uri)
     {
         $this->verb = $verb;
@@ -22,5 +24,15 @@ class Request
     public function getUri()
     {
         return $this->uri;
+    }
+
+    public function setHeader($name, $value)
+    {
+        $this->headers[$name] = $value;
+    }
+
+    public function getHeaders()
+    {
+        return $this->headers;
     }
 }
