@@ -2,7 +2,7 @@
 
 namespace AppBundle\RequestHandler;
 
-use Symfony\Component\HttpFoundation\Request;
+use AppBundle\RequestHandler\Request;
 
 interface RequestHandler
 {
